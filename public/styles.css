@@ -1,0 +1,95 @@
+:root {
+  --purple-light: #6f00ff;
+  --purple-dark: #2A0944;;
+  --purple: #561c83;
+  --black: #110f11;
+
+  --colour-text-body: var(--black);
+  --colour-text-heading: var(--purple);
+  --colour-text-heading-alt: var(--purple-dark);
+  --colour-text-heading-main: var(--purple-light);
+  --colour-text-link: var(--purple);
+  --colour-text-link-hocus: var(--purple-light);
+}
+
+html {
+  color: var(--colour-text-body);
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  line-height: 1.75;
+}
+
+#wrap {
+  width: 85vw;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
+}
+
+h1 {
+  color: var(--colour-text-heading-main);
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin: 0.5em 0 0;
+}
+
+h2, h3, h4, strong {
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--colour-text-heading);
+  font-size: 1.575rem;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 1.5em 0 0.75em;
+}
+
+h1 + h2, h2:first-child {
+  margin-top: 0.5em;
+}
+
+h3 {
+  color: var(--colour-text-heading-alt);
+  font-size: 1.225rem;
+  line-height: 1.5;
+  margin: 1.25em 0 0.5em;
+}
+
+h4 {
+  color: var(--colour-text-heading);
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 1em 0 0.25em;
+}
+
+a {
+  color: var(--colour-text-link);
+  font-weight: 500;
+}
+
+a:hover, a:focus {
+  color: var(--colour-text-link-hocus);
+}
+
+p {
+  margin: 0.75em 0;
+}
+
+h2 + p, h3 + p, h4 + p {
+  margin-top: 0;
+}
+
+ul > li {
+  margin: 0.5em 0;
+}
+
+blockquote {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.325rem;
+  margin: 1em 0.5em 1em 1.5em;
+  color: var(--colour-text-heading);
+}
